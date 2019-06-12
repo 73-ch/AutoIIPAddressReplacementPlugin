@@ -42,7 +42,7 @@ class AutoIPAddressPlugin {
         bundle.hooks.optimizeModules.tap(NAME, onOptimize);
       });
     } else {
-      compielr.plugin('compilation', bundle => {
+      compiler.plugin('compilation', bundle => {
         bundle.plugin('optimize-modules', onOptimize);
       });
     }
