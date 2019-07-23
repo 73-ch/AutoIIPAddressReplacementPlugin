@@ -2,7 +2,7 @@ const os = require('os');
 
 const NAME = 'my-auto-ip-address-replace';
 
-class AutoIPAddressPlugin {
+class WebpackIPAddressReplacePlugin {
   constructor(options) {
     this.name = options.name || "__SERVER_IP__";
     this.requested_interfaces = options.interfaces || ['en0'];
@@ -49,4 +49,4 @@ class AutoIPAddressPlugin {
   }
 }
 
-module.exports = AutoIPAddressPlugin;
+module.exports = WebpackIPAddressReplacePlugin;
